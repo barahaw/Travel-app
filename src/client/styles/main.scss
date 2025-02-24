@@ -1,0 +1,199 @@
+@import "./base.scss";
+
+.main {
+    
+    margin-top: 100px;
+    h1 {
+        
+        text-align: center;
+        font-family: $main-font;
+        font-size: 40px;
+        letter-spacing: 5px;
+        border-style:solid;
+        width: 300px;
+        margin: 10px auto;
+        border-color: $btn2-color;
+        border-width: thin;
+        box-shadow: -3px 3px $btn2-color;
+        border-radius: 10px;
+        
+    }
+    
+    form {
+        
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        background-color: $base-color;
+        margin: 100px 20px;
+        padding: 30px 0 0 0;
+        
+        .place {
+            display: block;
+            margin: 20px 0;
+
+        }
+
+        .dates {
+            display: flex;
+            flex-direction: row;
+
+            .start {
+                margin-right: 20px;
+            }
+            .end {
+                margin-left: 20px;
+            }
+        }
+        span {
+            
+            label {
+                
+                font-size: 34px;
+                font-weight: 600;
+                color: $font-color;
+            }
+
+            label:nth-of-type(2) {
+                margin-left: 40px;
+            }
+            
+            input {
+                
+                border-color: $scond-color;
+                border-style: solid;
+                border-radius: 4px;
+                width: 240px;
+                height: 40px;
+                padding: 10px;
+                margin-left: 10px;
+                font-size: 15px;
+                overflow: hidden;   
+            }
+
+        }
+        
+        .btns {
+            
+            margin:  30px auto;
+
+            .btn {
+                
+                
+                cursor: pointer;
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin: 20px 20px;
+                border-radius: 5px;
+                font-family: $btn-font;
+                text-align: center;
+                text-transform: capitalize;
+                padding: 7px;
+            }
+            
+            .save-btn {
+    
+                background-color: $btn-color;
+                color: $base-color;
+                width: 180px;
+                height: 50px;
+                border-color: $btn-color;
+            }
+            .save-btn:hover {
+                background-color: $base-color;
+                color: $btn-color;
+                border-color: $base-color;
+            }
+            .remove-btn {
+                
+                background-color: $scond-color;
+                width: 180px;
+                height: 50px;
+                color: $base-color;
+                border-color: $scond-color;
+                
+            }
+            .remove-btn:hover {
+
+                color: $scond-color;
+                background-color: $base-color;
+            }
+        }
+        
+        
+    }
+    
+}
+
+.todo-list {
+
+    margin-top: -40px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    .add-to-do {
+
+        width: 300px;
+        padding: 5px 10px;        
+        text-align: left;
+        font-size: 25px;
+        font-family: Alfa Slab One,cursive;
+        color: #437ff1;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        .fa-clipboard-list {
+            margin: 0 20px 0 10px;
+            color: #437ff1;
+        } 
+    }  
+    .add-task {
+        width: 300px;
+        border-radius: 15px;
+        margin: 15px 0;
+        border-color: #697397;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .to-do-list {
+        border-color: #437ff1;
+        border-style: solid;
+        padding: 5px;
+        /* font-size: 20px; */
+        border-radius: 5px;
+        background-color: #437ff1;
+        /* color: white; */
+        /* list-style-type: myanmar; */
+        width: 50%;
+        // display: none;
+        li.item.checked {
+            text-decoration: line-through;
+        }
+        .item {
+
+            color: white;
+            /* padding: 5px; */
+            margin: 5px 0;
+            display: flex;
+            align-items: baseline;
+            justify-content: baseline;
+            cursor: pointer;
+            span {
+
+                font-size: 30px;
+                margin-left: 10px;
+            }
+            .delete {
+
+                color: white;
+                margin-left: 50px;
+                cursor: pointer;
+                margin-left: 100px;
+
+            }
+        
+        }
+    }
+}
